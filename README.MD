@@ -1,0 +1,1 @@
+Just a weather app to get the weather report of a city from an API
