@@ -15,8 +15,8 @@ myRequest.onload = function()
     {
         if(myRequest.status === 200)
         {
-            myData = myRequest.response;
-            console.log(myData);
+            const myData = myRequest.response;
+            console.log(myData[0]);
         }
         else
             console.log('Erreur informations non reçues');
