@@ -9,3 +9,17 @@ myRequest.responseType = 'json';
 myRequest.send();
 
 
+myRequest.onload = function()
+{
+    if(myRequest.readyState === XMLHttpRequest.DONE)
+    {
+        if(myRequest.status === 200)
+        {
+            myData = myRequest.response;
+            console.log(myData);
+        }
+        else
+            console.log('Erreur informations non reçues');
+    }
+}
+
