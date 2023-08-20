@@ -18,8 +18,8 @@ myRequest.onload = function()
         if(myRequest.status === 200)
         {
             const myData = myRequest.response;
-            console.log(myData[0]);
-            temperatureLabel.innerText = `${myData[0].name}`;
+            console.log(myData);
+            temperatureLabel.innerText = `${myData[0].name} - ${myData[0].country}`;
         }
         else
             console.log('Erreur informations non reçues');
