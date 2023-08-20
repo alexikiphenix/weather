@@ -1,4 +1,5 @@
 "use strict";
+const temperature = document.getElementById(`temperature`);
 const temperatureLabel = document.getElementById(`temperature_label`);
 const city = 'Tokyo';
 const key = '3ba750e375ce856d1fecdb1aa520f18e';
