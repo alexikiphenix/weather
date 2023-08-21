@@ -29,7 +29,7 @@ myRequest.onload = function()
         {
             const myData = myRequest.response;
             console.log(myData);
-            // temperatureLabel.innerText = `${myData[0].name} - ${myData[0].country}`;
+            temperatureLabel.innerText = `${myData.name} - ${myData.main.temp}`;
         }
         else
             console.log('Erreur informations non reçues');
