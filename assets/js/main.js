@@ -1,7 +1,7 @@
 "use strict";
 const temperature = document.getElementById(`temperature`);
 const temperatureLabel = document.getElementById(`temperature_label`);
-const btnChange = document.querySelector(`#change`);
+const btnChange = document.querySelector(`#btnChange`);
 const box = document.querySelector('#box');
 const cityBox = document.querySelector('#city');
 let city = 'Tokyo';
