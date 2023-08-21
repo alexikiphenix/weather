@@ -4,7 +4,9 @@ const temperatureLabel = document.getElementById(`temperature_label`);
 const btnChange = document.querySelector(`#change`);
 let city = 'Tokyo';
 const key = '3ba750e375ce856d1fecdb1aa520f18e';
-const url = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${key}`;
+
+const urlOFF = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${key}`;
+const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&units=metric`;
 
 
 const cityBox = document.createElement('input');
@@ -27,7 +29,7 @@ myRequest.onload = function()
         {
             const myData = myRequest.response;
             console.log(myData);
-            temperatureLabel.innerText = `${myData[0].name} - ${myData[0].country}`;
+            // temperatureLabel.innerText = `${myData[0].name} - ${myData[0].country}`;
         }
         else
             console.log('Erreur informations non reçues');
