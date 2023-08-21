@@ -62,16 +62,29 @@ getTemperature('San francisco');
 // inputCity.value = "GROS TEST";
 btnChange.addEventListener('click', () =>
 {      
-    if(checkInput(inputCity))
-    {
-        console.log(inputCity.value.length);
-        getTemperature(inputCity.value);
-    }
-
     if(!document.getElementById('inputCity')) 
-    {
+    {        
+        // inputCity.style.display = `block`;
         box.prepend(inputCity);   
     }
+    
+    // if(inputCity.style.display === 'none')
+    //     btnChange.innerText = `Valider`;
+    if(checkInput(inputCity))
+    {      
+        getTemperature(inputCity.value);
+        inputCity.value = ``;
+        inputCity.style.display = 'none';
+        btnChange.innerText = `Changer de ville`;
+    }
+    else
+    {
+        inputCity.style.display = 'block';
+        btnChange.innerText = `Valider`;
+    }
+    
+
+
     box.prepend(inputCity);
 })
 
