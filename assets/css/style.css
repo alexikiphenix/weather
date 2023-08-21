@@ -3,10 +3,12 @@
 }
 html, body 
 {
-  background: #2980B9;
+  /* background: #2980B9;
   background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
-  background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
-  background-image: url('img/mountain_sky.jpg');
+  background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); */
+  background-image: url('../img/mountain_sky.jpg');
+  background-size: cover;
+  background-position: center;
   min-width: 400px;
 }
 
@@ -32,9 +34,18 @@ html, body
   width: 100%;
 }
 
+#city
+{
+  font-size: 1.5rem;
+  color: rgb(252, 252, 252);  
+  text-shadow: 1px 1px 1px rgb(2, 2, 2);
+}
+
 #temperature 
 {
   font-size: 4em;
+  color: white;
+  text-shadow: 1px 1px 1px black;
 }
 
 #btnChange 
