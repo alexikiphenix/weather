@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 html, body 
 {
   background: #2980B9;
@@ -15,6 +18,17 @@ html, body
 }
 #city {
   text-transform: capitalize;
+}
+
+.box
+{
+  border: 1px solid white;
+}
+
+#inputCity
+{
+  display: block;
+  width: 100%;
 }
 
 #temperature 

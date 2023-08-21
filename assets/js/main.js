@@ -11,6 +11,7 @@ const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${k
 
 
 const temperatureBox = document.createElement('input');
+temperatureBox.setAttribute('id', 'inputCity');
 
 btnChange.addEventListener('click', () =>
 {
