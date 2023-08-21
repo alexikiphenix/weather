@@ -6,6 +6,7 @@ html, body
   background: #2980B9;
   background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
   background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
+  background-image: url('./assets/img/mountain_sky.jpg');
   min-width: 400px;
 }
 
