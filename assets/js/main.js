@@ -33,7 +33,7 @@ const getTemperature = (city) =>
                 const myData = myRequest.response;
                 console.log(myData);
                 cityBox.innerText = `${myData.name}`;
-                temperatureLabel.innerText = `${myData.main.temp}`;
+                temperatureLabel.textContent = `${myData.main.temp}`;
             }
             else
             console.log('Erreur informations non reçues');
