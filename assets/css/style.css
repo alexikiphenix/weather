@@ -52,11 +52,16 @@ html, body
 {
   text-align: center;
   padding: .2rem;
+  user-select: none;
   background: rgba(178, 223, 251, .3);
   cursor: pointer;
   border: 1px solid white;
 }
 
+#btnChange:active
+{
+  transform: scale(.9);
+}
 .hidden
 {
   display: none;
