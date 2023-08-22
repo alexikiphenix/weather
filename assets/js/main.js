@@ -59,12 +59,10 @@ const checkInput = (inputUser = String) =>
 getTemperature('San francisco');
 
 
-// inputCity.value = "GROS TEST";
 btnChange.addEventListener('click', () =>
 {      
     if(!document.getElementById('inputCity')) 
-    {        
-        // inputCity.style.display = `block`;
+    {   
         box.prepend(inputCity);   
     }
     
