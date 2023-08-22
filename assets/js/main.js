@@ -65,9 +65,7 @@ btnChange.addEventListener('click', () =>
     {   
         box.prepend(inputCity);   
     }
-    
-    // if(inputCity.style.display === 'none')
-    //     btnChange.innerText = `Valider`;
+
     if(checkInput(inputCity))
     {      
         getTemperature(inputCity.value);
@@ -81,8 +79,6 @@ btnChange.addEventListener('click', () =>
         btnChange.innerText = `Valider`;
     }
     
-
-
     box.prepend(inputCity);
 })
 
