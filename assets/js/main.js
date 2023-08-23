@@ -3,7 +3,7 @@ const temperature = document.getElementById(`temperature`);
 const temperatureLabel = document.getElementById(`temperature_label`);
 const btnChange = document.querySelector(`#btnChange`);
 const box = document.querySelector('#box');
-const cityBox = document.querySelector('#city');
+const cityLabel = document.querySelector('#city_label');
 let city = 'Tokyo';
 const key = '3ba750e375ce856d1fecdb1aa520f18e';
 
@@ -32,11 +32,11 @@ const getTemperature = (city) =>
             {
                 const myData = myRequest.response;
                 console.log(myData);
-                cityBox.innerText = `${myData.name}`;
+                cityLabel.innerText = `${myData.name}`;
                 temperatureLabel.textContent = `${myData.main.temp}`;
             }
             else
-            console.log('Erreur informations non reçues');
+                cityLabel.textContent = `Erreur, ville inconnue`;
         }
     }
 }
