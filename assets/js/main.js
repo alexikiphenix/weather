@@ -4,7 +4,7 @@ const temperatureLabel = document.getElementById(`temperature_label`);
 const btnChange = document.querySelector(`#btnChange`);
 const box = document.querySelector('#box');
 const cityLabel = document.querySelector('#city_label');
-let city = 'Tokyo';
+let city = 'Paris';
 const key = '3ba750e375ce856d1fecdb1aa520f18e';
 
 const urlOFF = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${key}`;
@@ -56,7 +56,7 @@ const checkInput = (inputUser = String) =>
         return false;
 }
 
-getTemperature('San francisco');
+getTemperature(city);
 
 
 btnChange.addEventListener('click', () =>
